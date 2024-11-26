@@ -50,7 +50,7 @@ public class LoanCalc {
 				endbalance1= (endbalance1 - payment1)*(1+rate/100);	
 			}
 			if(endbalance1>epsilon){
-				payment1+=0.01;
+				payment1+=0.001;
 				iterationCounter++;
 
 		
