@@ -45,14 +45,14 @@ public class LoanCalc {
 		double payment1=loan/n;
 		while (endbalance1>epsilon)  {
 			 endbalance1= loan;
-			iterationCounter++;
-
+			
 			for(int i=0;i<n;i++){
 				endbalance1= (endbalance1 - payment1)*(1+rate/100);	
 			}
 			if(endbalance1>epsilon){
 				payment1+=0.01;
-				 
+				iterationCounter++;
+
 		
 			}
 
