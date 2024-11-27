@@ -29,6 +29,11 @@ public class Anagram {
 	// Returns true if the two given strings are anagrams, false otherwise.
 	public static boolean isAnagram(String str1, String str2) {
 		boolean isAnagram= false;
+		if(str1.length()==0 && str2.length()==0){
+			isAnagram= true;
+		} else if(str1.length()!= str2.length()){
+			isAnagram= false;
+		}else{
 		for(int i=0;i<str1.length();i++){
 			for(int j= 0;j<str2.length() && isAnagram==false;j++){
 				
@@ -40,7 +45,9 @@ public class Anagram {
 				}
 				
 			}
-			return isAnagram;
+			
+		}
+		return isAnagram;
 		}
 		
 		
@@ -72,6 +79,10 @@ public class Anagram {
 		for(int i=0;i<str.length();i++){
 		int random= (int)((Math.random())*(str.length()));
 		ans2=ans2+str.charAt(random);
+
+
+
+
 		}
 
 		return ans2;
