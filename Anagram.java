@@ -31,8 +31,7 @@ public class Anagram {
 		boolean isAnagram= false;
 		if(str1.length()==0 && str2.length()==0){
 			isAnagram= true;
-		} else if(str1.length()!= str2.length()){
-			isAnagram= false;
+		
 		}else{
 		for(int i=0;i<str1.length();i++){
 			for(int j= 0;j<str2.length() && isAnagram==false;j++){

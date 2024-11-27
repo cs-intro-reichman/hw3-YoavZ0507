@@ -51,8 +51,12 @@ public class Algebra {
 		}
 
 			
-		}else{
+		}else if (x2<0 && x1>0){
 			for(int i=1;i<=x1;i++){
+				times += x2;
+			}
+		} else if(x2<0 && x1<0){
+			for(int i=-1;i>=x1;i--){
 				times += x2;
 			}
 		}
